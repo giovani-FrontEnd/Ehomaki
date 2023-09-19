@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./ehomaki-logo.png">
+    <!-- FONT AWESOME 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>EHOMAKI - SUSHI MENU</title>
+</head>
+<body>
+
+    <!-- HEADER  -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="./ehomaki-logo.png" alt="">
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="sushi.html">Sushi</a>
+                    </li>
+                    <li>
+                        <a href="streetFood.html">Street Food</a>
+                    </li>
+                    <li>
+                        <a href="drinks.html">Drinks</a>
+                    </li>
+                    <li>
+                        <a href="desserts.html">Desserts</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger-list" id="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="sushi-menus">
+        <div class="title-menu">SUSHI</div>
+        <div class="container">
+            <div class="wrapper">
+                  <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
+                  <ul class="tabs-box">
+                        <a href="#startes" class="tab active" data-title="startes">STARTES</a>
+                        <a href="#salad" class="tab" data-title="salad">SALAD</a>
+                        <a href="#hoso-maki" class="tab" data-title="hoso-maki">HOSO MAKI</a>
+                        <a href="#sashimi" class="tab" data-title="sashimi">SASHIMI</a>
+                        <a href="#sushi" class="tab" data-title="sushi">SUSHI</a>
+                        <a href="#tempura" class="tab" data-title="tempura">TEMPURA</a>
+                        <a href="#temaki" class="tab" data-title="temaki">TEMAKI</a>
+                        <a href="#burritos" class="tab" data-title="burritos">BURRITOS</a>
+                        <a href="#crispy-uramaki" class="tab" data-title="crispy-uramaki">CRISPY URAMAKI</a>
+                        <a href="#sesame-uramaki" class="tab" data-title="sesame-uramaki">SESAME URAMAKI</a>
+                        <a href="#tobiko-uramaki" class="tab" data-title="tobiko-uramaki">RED TOBIKO URAMAKI</a>
+                        <a href="#naked-uramaki" class="tab" data-title="naked-uramaki">NAKED ROLLS</a>
+                        <a href="#special-roll-uramaki" class="tab" data-title="special-roll-uramaki">SPECIAL ROLL URAMAKI</a>
+                        <a href="#special-roll-uramaki-without-rice" class="tab" data-title="special-roll-uramaki-without-rice">SPECIAL ROLL URAMAKI WITHOUT RICE</a>
+                        <a href="#dragon-roll" class="tab" data-title="dragon-roll">DRAGON ROLL</a>
+                        <a href="#pock-bowl-salad" class="tab" data-title="pock-bowl-salad">POCK BOWL SALAD</a>
+                        <div class="icon"><i id="right" class="fa-solid fa-angle-right"></i></div>
+                  </ul>
+                </div>
+                
+                <div class="cards-menu">
+                <div class="card-menu active" id="startes">
+                    <div class="title-card">
+                        <h2>STARTES</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/edamame.jpg" alt="">
+                            <h2>EDAMAME <span>$3</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/Spicy-edamame.jpg" alt="">
+                            <h2>spicy edamame <span>$3</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/shrimp-dumpling.jpg" alt="">
+                            <h2>shrimp dumpling <span>$5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/vegetable spring roll.jpg" alt="">
+                            <h2>vegetables spring rolls <span>$4</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/shrimp-spring-rolls.jpg" alt="">
+                            <h2>shrimp spring rolls <span>$5</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-menu" id="salad">
+                    <div class="title-card">
+                        <h2>SALAD</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/crab salad.jpg" alt="">
+                            <h2>crab salad <span>$5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/spicy salmon salad.jpg" alt="">
+                            <h2>spicy salmon  <span>$11</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/crispy salmon salad.jpg" alt="">
+                            <h2>crispy salmon <span>$11</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/spicy tuna.jpg" alt="">
+                            <h2>spicy tuna <span>$10</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/crispy tuna.jpg" alt="">
+                            <h2>crispy tuna <span>$10</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/uzukuri salmon.jpg" alt="">
+                            <h2>usuzukuri salmon <span>$7</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/usuzukuri tuna.jpg" alt="">
+                            <h2>usuzukuri tuna <span>$6</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/uzukuri white fish.jpg" alt="">
+                            <h2>usuzukuri white fish <span>$5</span></h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-menu" id="hoso-maki">
+                    <div class="title-card">
+                        <h2>HOSO MAKI (4pcs)</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/hoso salmon.jpg" alt="">
+                            <h2>salmon <span>$2.5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/hoso tuna.jpg" alt="">
+                            <h2>tuna  <span>$2.5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/hoso shrimp.jpg" alt="">
+                            <h2>shrimp <span>$2.5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/hoso crab.jpg" alt="">
+                            <h2>crab <span>$2</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/hoso white fish.jpg" alt="">
+                            <h2>white fish <span>$2</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/hoso kapa.jpg" alt="">
+                            <h2>kappa <span>$1</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/hoso maki phily.jpg" alt="">
+                            <h2>philly <span>$2</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/hoso avocado.jpg" alt="">
+                            <h2>avocado <span>$1.5</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-menu" id="sashimi">
+                    <div class="title-card">
+                        <h2>SASHIMI (3pcs)</h2>
+                    </div>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                        <div class="imgs-card">
+                            <div class="img-card">
+                            <img src="./assets/images/sushi-img/sahsimi-tuna.jpg" alt="">
+                            <h2>tuna <span>$5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/smoked salmon.jpg" alt="">
+                            <h2>smoked salmon  <span>$5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/salmon.jpg" alt="">
+                            <h2>salmon <span>$5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/crab.jpg" alt="">
+                            <h2>crab <span>$2</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/white-fish-sashimi.jpg" alt="">
+                            <h2>white fish <span>$4</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/shrimp-sashimi.jpg" alt="">
+                            <h2>shrimp <span>$3</span></h2>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="card-menu" id="sushi">
+                    <div class="title-card">
+                        <h2>SUSHI (2pcs)</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/tuna sushi.jpg" alt="">
+                            <h2>tuna <span>$2</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/salmon sushi.jpg" alt="">
+                            <h2>salmon  <span>$2</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/smoked sushi.jpg" alt="">
+                            <h2>smoked salmon <span>$3</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/crab sushi.jpg" alt="">
+                            <h2>crab <span>$1.5</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/white fish sushi.jpg" alt="">
+                            <h2>white fish <span>$2</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/shrimp sushi.jpg" alt="">
+                            <h2>shrimp <span>$2</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/shrimp tempuraaa.jpg" alt="">
+                            <h2>tempura <span>$5</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-menu" id="tempura">
+                    <div class="title-card">
+                        <h2>TEMPURA</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/shrimp-tempura.jpg" alt="">
+                            <h2>shrimp tempura <span>$6</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/dynamite.jpg" alt="">
+                            <h2>dynamite shrimp<span>$8</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/" alt="">
+                            <h2>crasy fried <span>$5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/" alt="">
+                            <h2>sweet crunchy<span>$6</span></h2> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-menu" id="temaki">
+                    <div class="title-card">
+                        <h2>TEMAKI (1pcs)</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/salmon temaki.jpg" alt="">
+                            <h2>salmon <span>$4</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/crazy temaki.jpg" alt="">
+                            <h2>crasy <span>$3</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/tuna.jpg" alt="">
+                            <h2>tuna <span>$5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/shrimp.jpg" alt="">
+                            <h2>shrimp <span>$5</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/shrimp-temaki.jpg" alt="">
+                            <h2>shrimp tempura<span>$6</span></h2> 
+                        </div>
+                        <div class="img-card" >
+                            <img src="./assets/images/sushi-img/" alt="">
+                            <h2>white fish <span>$4</span></h2>
+                            <p>(Temaki , added spicy sauce <span>0.5$</span>)</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card-menu" id="crispy-uramaki">
+                    <div class="title-card">
+                        <h2>CRISPY URAMAKI (4pcs)</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/crispy crasy.jpg" alt="">
+                            <h2>crasy crab <span>$2.5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/california crispy.jpg" alt="">
+                            <h2>california <span>$2</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/crispy salmon.jpg" alt="">
+                            <h2>salmon <span>$5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/crispy shrimp.jpg" alt="">
+                            <h2>shrimp<span>$5</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/tempura.jpg" alt="">
+                            <h2>tempura<span>$5</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/tuna-cripsy.jpg" alt="">
+                            <h2>tuna<span>$5</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/" alt="">
+                            <h2>white fish <span>$5</span></h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-menu" id="sesame-uramaki">
+                    <div class="title-card">
+                        <h2>SESAME URAMAKI (4pcs)</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/california sesame.jpg" alt="">
+                            <h2>california <span>$2</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/shrimp tempura sesame.jpg" alt="">
+                            <h2>shrimp<span>$4</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/sesame special salmon.jpg" alt="">
+                            <h2>salmon<span>$4</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/" alt="">
+                            <h2>salmon skin<span>$2.5</span></h2> 
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/" alt="">
+                            <h2>green california<span>$3</span></h2> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-menu" id="tobiko-uramaki">
+                    <div class="title-card">
+                        <h2>RED TOBIKO URAMAKI (4pcs)</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/tobico crasy.jpg" alt="">
+                            <h2>crasy <span>$2.5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/california tobiko.jpg" alt="">
+                            <h2>california <span>$2.5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/phila salmon.jpg" alt="">
+                            <h2>phila salmon<span>$5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/volcano salmon.jpg" alt="">
+                            <h2>volcano<span>$4</span></h2> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-menu" id="naked-uramaki">
+                    <div class="title-card">
+                        <h2>NAKED ROLLS (4pcs)</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/salmon-uramaki.jpg" alt="">
+                            <h2>salmon <span>$4</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/maguro.jpg" alt="">
+                            <h2>manguro <span>$5</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/philly.jpg" alt="">
+                            <h2>philly<span>$4</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/king salmon.jpg" alt="">
+                            <h2>smokey<span>$6</span></h2> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-menu" id="special-roll-uramaki">
+                    <div class="title-card">
+                        <h2>SPECIAL URAMAKI (4pcs)</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/" alt="">
+                            <h2>okinawa <span>$4</span></h2>
+                            <p>Crispy, avocado, Philadelphia Cheese, salmon wrap, caviar&lemon topping</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/salmon coat.jpg" alt="">
+                            <h2>salmon coat <span>$4</span></h2>
+                            <p>Crab mix, salmon wrap, crasy topping, crispy</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/salmon tartar.jpg" alt="">
+                            <h2>salmon tartar<span>$3</span></h2>
+                            <p>crab mix, spicy salmon wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/suns" alt="">
+                            <h2>sunset<span>$6</span></h2> 
+                            <p>Philadelphia Cheese, salmon, shrimp mix wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/alskan.jpg" alt="">
+                            <h2>alaskan<span>$3</span></h2> 
+                            <p>Crab mix, avocado & shrimp wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/rainbow.jpg" alt="">
+                            <h2>rainbow<span>$4</span></h2> 
+                            <p>Salmon, avocado, crab mix wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/tango.jpg" alt="">
+                            <h2>tango<span>$4</span></h2> 
+                            <p>Salmon, crab, mango wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/crazy mango.jpg" alt="">
+                            <h2>crasy mango<span>$3</span></h2> 
+                            <p>crab mix, mango wrap, crasy topping</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/duo.jpg" alt="">
+                            <h2>duo<span>$4</span></h2> 
+                            <p>Salmon, crab ,avocado, Philadelphia Cheese wrap, red caviar topping</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/tokyo.jpg" alt="">
+                            <h2>tokyo<span>$3</span></h2> 
+                            <p>Crab mix, avocado&tuna wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/iceland.jpg" alt="">
+                            <h2>iceland<span>$6</span></h2> 
+                            <p>Salmon, Philadelphia Cheese, tuna wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/tuna tartar.jpg" alt="">
+                            <h2>tuna tartar<span>$5</span></h2> 
+                            <p>Crab mix, spicy tuna wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/special strawbery.jpg" alt="">
+                            <h2>special strawberry<span>$3</span></h2> 
+                            <p>Crab mix, avocado, strawberry wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/green lotus.jpg" alt="">
+                            <h2>green lotus<span>$6</span></h2> 
+                            <p>Salmon, crab, avocado wrap, mango&salmon topping</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/osaka.jpg" alt="">
+                            <h2>osaka<span>$5</span></h2> 
+                            <p>Salmon, Philadelphia Cheese, mango wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/havana.jpg" alt="">
+                            <h2>havana<span>$5</span></h2> 
+                            <p>Crab mix, avocado wrap, shrimp topping</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/skinny.jpg" alt="">
+                            <h2>skinny<span>$2.5</span></h2> 
+                            <p>Crab mix , grilled salmon, crispy topping, teraiki sauce</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/kani shake.jpg" alt="">
+                            <h2>kani shake<span>$3</span></h2> 
+                            <p>Crab, shrimp, avocado, salmon& avocado wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/zumba.jpg" alt="">
+                            <h2>zumba<span>$5</span></h2> 
+                            <p>Crab mix, avocado wrap, salmon&crispy topping, teraiki sauce</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-menu" id="special-roll-uramaki-without-rice">
+                    <div class="title-card">
+                        <h2>SPECIAL ROLL WITHOUT RICE (4pcs)</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/salkany.jpg" alt="">
+                            <h2>salkany<span>$6</span></h2> 
+                            <p>Crab mix, Philadelphia Cheese, lolo rosso,salmon wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/fujisan.jpg" alt="">
+                            <h2>fujisan<span>$7</span></h2> 
+                            <p>Salmon mix, Philadelphia Cheese, lolo rosso, salmon wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/SPECIAL RIO.jpg" alt="">
+                            <h2>special rio <span>$7</span></h2>
+                            <p>Crab, salmon, sesame, mango&salmon wrap , lemon topping</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/kamikaze.jpg" alt="">
+                            <h2>kamikaze <span>$6</span></h2>
+                            <p>Crab mix, salmon, avocado&salmon wrap , lemon topping</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/TOPITO.jpg" alt="">
+                            <h2>topito <span>$8.5</span></h2>
+                            <p>Shrimp, mayo sauce, lolo rosso, tuna wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/BOSTON.jpg" alt="">
+                            <h2>boston <span>$7</span></h2>
+                            <p>Shrimp, mayo sauce, spring onion, salmon wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/MAGURO.png" alt="">
+                            <h2>salmon philly <span>$6</span></h2>
+                            <p>Philadelphia Cheese, salmon wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/DYNAMITE-without-rice.jpg" alt="">
+                            <h2>Dynamite <span>$7</span></h2>
+                            <p>Crab mix, salmon, Philadelphia Cheese, salmon tartar, mix caviar</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/kingo.jpg" alt="">
+                            <h2>Kingo <span>$7</span></h2>
+                            <p>Salmon, avocado, Philadelphia Cheese, salmon wrap , cheesy topping</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/unlimited.jpg" alt="">
+                            <h2>Unlimited <span>$8</span></h2>
+                            <p>Rice paper, crab mix, crispy , avocado, strawberry&kiwi wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/taki.jpg" alt="">
+                            <h2>taki<span>$10</span></h2> 
+                            <p>Rice paper, salmon mix, Philadelphia Cheese, salmon&mango wrap</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/MAGURO.png" alt="">
+                            <h2>Smoked green <span>$6</span></h2>
+                            <p>Crab mix, lolo rosso, smoked salmon wrap, mayo sauce</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/CHAYO SPECIAL URAMAKI.jpg" alt="">
+                            <h2>Chayo<span>$4</span></h2> 
+                            <p>Crab mix, avocado, Philadelphia Cheese wrap, crispy topping</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/KING SALMON.png" alt="">
+                            <h2>riceless<span>$10</span></h2> 
+                            <p>Tuna, avocado, tartar tuna, mix caviar topping</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-menu" id="burritos">
+                    <div class="title-card">
+                        <h2>BURRITOS</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/mix burito.jpg" alt="">
+                            <h2>mix burrito <span>$9</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/burrito crab.jpg" alt="">
+                            <h2>crab burrito<span>$8</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/CRAZYFUND.png" alt="">
+                            <h2>salmon burrito <span>$10</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-menu" id="dragon-roll">
+                    <div class="title-card">
+                        <h2>DRAGON ROLL (8pcs)</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/tropic dragon.jpg" alt="">
+                            <h2>tropic <span>$7</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/crunchy dragon.jpg" alt="">
+                            <h2>crunchy <span>$7</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/gold dragon.jpg" alt="">
+                            <h2>gold<span>$10</span></h2>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/kobe dragon.jpg" alt="">
+                            <h2>kobe<span>$10</span></h2> 
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-menu" id="pock-bowl-salad">
+                    <div class="title-card">
+                        <h2>POCK BOWL SALAD</h2>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </div>
+                    <div class="imgs-card">
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/rainbow-bowl-salad.jpg" alt="">
+                            <h2>rainbow <span>$12</span></h2>
+                            <p>Mixed salmon &crab, rice, edamame beans, avocado, Philadelphia Cheese, cucumber, baby tomato, soy sauce</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/tartar.jpg" alt="">
+                            <h2>tartar <span>$13</span></h2>
+                            <p>Tuna, rice, spring onion, baby tomato, cucumber, edamame beans, avocado, crispy, spicy mayo sauce, soy sauce</p>
+                        </div>
+                        <div class="img-card">
+                            <img src="./assets/images/sushi-img/fusion.jpg" alt="">
+                            <h2>fusion<span>$12</span></h2>
+                            <p>Shrimp, rice, avocado, mango, edamame beans, crab sticks, baby tomato, carrots, spring onion, spicy mayo sauce, soy sauce</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class="footer-sushi-menu">
+        <h1>Contact Us : </h1>
+        <div class="social-icons">
+            <div>
+                <a href="https://www.instagram.com/ehomakisushi_/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://wa.me/81163580" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/people/Ehomaki/100088854056025/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+        <div class="location">Mejdlaya Zgharta, Ramia Center</div>
+    </footer>
+
+    
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

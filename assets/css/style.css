@@ -1,0 +1,999 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400&family=Lato:wght@300;400;700&family=MuseoModerno:wght@300;400;600&display=swap');
+:root{
+    --body-font: "Poppins", sans-serif;
+    --main-color: #f06f23;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    font-family: var(--body-font);
+}
+
+.font-title{
+    font-family: 'Metamorphous', cursive;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title-menu{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 30px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.title-menu::before{
+    content: '';
+    position: absolute;
+    top: 70%;
+    left: -40%;
+    height: 2px;
+    width: 50px;
+    background-color: #fff;
+}
+.title-menu::after{
+    content: '';
+    position: absolute;
+    top: 70%;
+    right: -40%;
+    height: 2px;
+    width: 50px;
+    background-color: #fff;
+}
+
+
+/* START HEADER  */
+header{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #040D12;
+    color: #fff;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    width: 150px;
+}
+header nav .logo img{
+    width: 100%;
+}
+header nav ul{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+header nav ul li{
+    padding: 0 15px;
+}
+header nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+}
+header nav ul li a:hover{
+    color: var(--main-color);
+}
+header nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: .4s;
+}
+header nav ul li a:hover::before{
+    width: 100%;
+}
+header nav .hamburger-list{
+    display: none;
+}
+/* END HEADER  */
+
+
+
+/* START MENU CARDS  */
+.menu-cards{
+    /* min-height: 90vh; */
+    margin-top: 50px;
+}
+.menu-cards .cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu-cards .cards > a{
+    width: 48%;
+    height: 300px;
+    margin: 20px 0;
+    background-color: #000;
+    color: #fff;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: .3s;
+}
+.menu-cards .cards > a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000038;
+}
+.menu-cards .cards > a:first-child{
+    background-image: url('../images/sushi-img/sushi-large-bg.jpg');
+}
+.menu-cards .cards > a:hover:first-child{
+    background-image: url('../images/sushi-img/sushi2-large-bg.jpg');
+}
+.menu-cards .cards > a:nth-child(2){
+    background-image: url('../images/streetFood-img/streetFood-large-bg.jpg');
+}
+.menu-cards .cards > a:hover:nth-child(2){
+    background-image: url('../images/streetFood-img/streetFood2-large-bg.jpg');
+}
+.menu-cards .cards > a:nth-child(3){
+    background-image: url('../images/drinks-img/drinks-large-bg.jpg');
+}
+.menu-cards .cards > a:hover:nth-child(3){
+    background-image: url('../images/drinks-img/drink2-large-bg.jpg');
+}
+.menu-cards .cards > a:last-child{
+    background-image: url('../images/desserts/desserts-bg.jpg');
+}
+.menu-cards .cards > a:hover:last-child{
+    background-image: url('../images/desserts/dessert2-large-bg.jpg');
+}
+
+.menu-cards .cards > a > h1{
+    font-size: 60px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    z-index: 2;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.menu-cards .cards > a > h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+/* END MENU CARDS  */
+
+/* START FOOTER  */
+footer{
+    background-color: #040D12;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+footer .social-icons {
+    display: flex;
+    margin-left: 100px;
+}
+footer .social-icons div{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    transition: .5s;
+}
+footer .social-icons div a{
+    color: var(--main-color);
+    transition: .5s;
+}
+footer .social-icons div:hover{
+    background-color: var(--main-color);
+    transform: scale(1.1);
+}
+footer .social-icons div:hover a{
+    color: #fff;
+}
+footer .location{
+    color: var(--main-color);
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+}
+/* END FOOTER  */
+
+
+/* START SUSHI MENU  */
+.sushi-menus{
+    background-color: var(--main-color);
+    /* min-height: 90vh; */
+}
+.sushi-menus .title-menu::before{
+    left: -80%;
+}
+.sushi-menus .title-menu::after{
+    right: -80%;
+}
+.sushi-menus .wrapper{
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 35px;
+    overflow-x: hidden;
+    margin: 30px auto 0 auto;
+    position: relative;
+}
+.sushi-menus .wrapper .icon{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+.sushi-menus .wrapper .icon:first-child{
+    left: -35px;
+    padding-left: 15px;
+    display: none;
+    background: linear-gradient(90deg, #fff 40%, transparent);
+}
+.sushi-menus .wrapper .icon:last-child{
+    right: -35px;
+    padding-right: 15px;
+    justify-content: flex-end;
+    background: linear-gradient(-90deg, #fff 40%, transparent);
+}
+.sushi-menus .wrapper .icon i{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.sushi-menus .wrapper .icon i:hover{
+    background-color: #efedfb;
+}
+.sushi-menus .wrapper .icon:first-child i{
+    margin-left: 15px;
+}
+.sushi-menus .wrapper .icon:last-child i{
+    margin-right: 15px;
+}
+.sushi-menus .wrapper .tabs-box{
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 12px;
+}
+.sushi-menus .wrapper .tabs-box.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+}
+.sushi-menus .wrapper .tabs-box .tab{
+    font-size: 1.18rem;
+    background-color: #f5f4fd;
+    padding: 10px;
+    border: 1px solid #d8d5f2;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #000;
+}
+.sushi-menus .wrapper .tabs-box.dragging .tab{
+    user-select: none;
+    pointer-events: none;
+}
+.sushi-menus .wrapper .tabs-box .tab.active{
+    color: #fff;
+    background-color: var(--main-color);
+    border-color: transparent;
+}
+.sushi-menus .cards-menu{
+    padding-bottom: 30px;
+}
+.sushi-menus .cards-menu .card-menu{
+    width: 100%;
+    height: 72px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.sushi-menus .cards-menu .card-menu.active{
+    height: 100%;
+}
+.sushi-menus .cards-menu .card-menu .title-card{
+    cursor: pointer;
+    position: relative;
+}
+.sushi-menus .cards-menu .card-menu .title-card::before{
+    content: '';
+    position: absolute;
+    bottom: -48%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+.sushi-menus .cards-menu .card-menu .title-card h2{
+    color: #000;
+}
+.sushi-menus .cards-menu .card-menu .title-card i{
+    font-size: 30px;
+    font-weight: bold;
+}
+.sushi-menus .cards-menu .card-menu .imgs-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.sushi-menus .cards-menu .card-menu .imgs-card .img-card{
+    width: 150px;;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.sushi-menus .cards-menu .card-menu .imgs-card .img-card img{
+    width: 150px;
+    height: 150px;
+}
+.sushi-menus .cards-menu .card-menu .imgs-card .img-card h2{
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.sushi-menus .cards-menu .card-menu .imgs-card .img-card h2 span{
+    color: var(--main-color);
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+}
+.sushi-menus .cards-menu .card-menu .imgs-card .img-card p{
+    font-size: 0.8rem;
+    color: rgba(128, 128, 128, 0.904);
+    font-family: cursive;
+    font-weight: bold;
+}
+.sushi-menus .cards-menu .card-menu .imgs-card .img-card p span{
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+/* END SUSHI MENU  */
+
+
+/* START STREET FOOD MENU  */
+.street-food{
+    background-color: var(--main-color);
+    padding-bottom: 20px;
+}
+.street-food .title-menu::before{
+    left: -35%;
+}
+.street-food .title-menu::after{
+    right: -35%;
+}
+.street-food .menu-btns{
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    margin: 30px auto;
+    width: fit-content;
+    border-radius: 6px;
+}
+.street-food .menu-btns  a{
+    background-color: #eee;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #000;
+    transition: .3s;
+}
+.street-food .menu-btns  a.active{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.street-food .cards-menu .card-menu{
+    margin: 15px auto;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    height: 75px;
+    overflow: hidden;
+}
+.street-food .cards-menu .card-menu.active{
+    height: 100%;
+}
+.street-food .cards-menu .card-menu .title-card{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 1.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 20px;
+}
+.street-food .cards-menu .card-menu .title-card::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+.street-food .cards-menu .card-menu .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.street-food .cards-menu .card-menu ul{
+    width: 50%;
+    margin: 20px 0;
+}
+.street-food .cards-menu .card-menu ul li{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.street-food .cards-menu .card-menu ul li h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.street-food .cards-menu .card-menu ul li h2 span{
+    text-transform: capitalize;
+    font-size: 0.8rem;
+}
+.street-food .cards-menu .card-menu ul li p{
+    font-size: 1.2rem;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.street-food .cards-menu .card-menu .img-card{
+    max-width: 48%;
+    margin-top: 20px;
+    /* height: 400px; */
+}
+.street-food .cards-menu .card-menu .img-card img{
+    max-width: 500px;
+    height: 400px;
+}
+.street-food .cards-menu .card-menu .salad-img{
+    max-width: 400px;
+    height: 200px;
+}
+.street-food .cards-menu .card-menu .salad-img img{
+    width: 100%;
+    height: 100%;
+}
+.street-food .cards-menu .card-menu .burger-img{
+    justify-content: center;
+}
+.street-food .cards-menu .card-menu h2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.street-food .cards-menu .card-menu h2 span{
+    font-size: 0.9rem;
+    color: #808080b3;
+    font-family: cursive;
+}
+/* END STREET FOOD MENU  */
+
+
+/* START DRINKS  */
+.drinks{
+    background-color: var(--main-color);
+    padding-bottom: 20px;
+}
+.drinks .title-menu::before{
+    left: -70%;
+}
+.drinks .title-menu::after{
+    right: -70%;
+}
+.drinks .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.drinks .cards .card{
+    width: 40%;
+    margin: 20px auto;
+    background-color: #fff;
+}
+.drinks .cards .card .img{
+    width: 100%;
+    height: 250px;
+}
+.drinks .cards .card .pepsi-mobile,
+.drinks .cards .card .wine-mobile,
+.drinks .cards .card .rose-mobile,
+.drinks .cards .card .ice-tea-mobile,
+.drinks .cards .card .water-mobile{
+    display: none;
+}
+.drinks .cards .card .img img{
+    width: 100%;
+    height: 100%;
+}
+.drinks .cards .card .title-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.drinks .cards .card .title-card h1{
+    font-size: 1.4rem;
+}
+.drinks .cards .card .title-card .price{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* END DRINKS  */
+
+
+
+/* RESPINSIVE DESIGN  */
+@media (max-width: 992px) {
+    header {
+        padding: 20px 50px;
+        position: relative;
+    }
+    header .hamburger-list{
+        width: 25px;
+        height: 20px;
+        position: absolute;
+        right: 10%;
+        top: 40%;
+        cursor: pointer;
+    }
+    header .hamburger-list span{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+        border-radius: 3px;
+        height: 2px;
+        transition: all .5s ease;
+    }
+    header .hamburger-list span:first-child{
+        top: 0;
+    }
+    header .hamburger-list span:nth-child(2){
+        top: 9px;
+    }
+    header .hamburger-list.active span:nth-child(2){
+        opacity: 0;
+    }
+    header .hamburger-list span:last-child{
+        top: 18px;
+    }
+    header .hamburger-list.active span:first-child,
+    header .hamburger-list.active span:last-child{
+        top: 10px;
+        background-color: var(--main-color);
+    }
+    header .hamburger-list.active span:first-child{
+        transform: rotate(50deg);
+    }
+    header .hamburger-list.active span:last-child{
+        transform: rotate(-50deg);
+    }
+    header nav ul {
+        width: 250px;
+        padding: 0;
+        position: absolute;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        right: 0;
+        height: 0;
+        top: 100%;
+        z-index: 10;
+        flex-direction: column;
+        transition: .4s;
+    }
+    header nav ul.active{
+        height: 300px;
+        padding: 20px;
+    }
+    header nav ul li{
+        padding: 10px 0;
+        display: none;
+        opacity: 0;
+        transition: .4s;
+    }
+    header nav ul.active li{
+        opacity: 1;
+        display: block;
+    }
+    header nav ul li a{
+        color: #000;
+    }
+    
+    .street-food .cards-menu .card-menu .content {
+        flex-direction: column;
+        align-items: normal;
+    }
+    .street-food .cards-menu .card-menu ul{
+        order: 2;
+        width: 100%;
+    }
+    .street-food .cards-menu .card-menu ul li{
+        margin: 5px 0;
+    }
+    .street-food .cards-menu .card-menu .img-card{
+        margin: 20px auto;
+        max-width: none;
+        height: 200px;
+    }
+    .street-food .cards-menu .card-menu .img-card img{
+        height: 100%;
+    }
+    .street-food .cards-menu .card-menu .burger-img{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 20px auto;
+    }
+    .street-food .cards-menu .card-menu .burger-img img{
+        margin: 0 20px;
+    }
+    .street-food .cards-menu .card-menu .burger-img img:nth-child(2){
+        display: none;
+    }
+    .street-food .cards-menu .card-menu .burger-img img:last-child,
+    .street-food .cards-menu .card-menu .sandwich-img img:last-child{
+        display: none;
+    }
+    .street-food .cards-menu .card-menu .burger-img {
+        justify-content: center;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer h1{
+        font-size: 15px;
+    }
+    footer .social-icons > div{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+    .menu-cards {
+        margin-top: 80px;
+    }
+    .menu-cards .cards{
+        flex-direction: column;
+    }
+    .menu-cards .cards > a{
+        width: 500px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    .sushi-menus .cards-menu #temaki .imgs-card .img-card:last-child {
+        margin-bottom: 30px;
+    }
+    .sushi-menus .cards-menu #special-roll-uramaki .imgs-card .img-card,
+    .sushi-menus .cards-menu #special-roll-uramaki-without-rice .imgs-card .img-card,
+    .sushi-menus .cards-menu #pock-bowl-salad .imgs-card .img-card{
+        margin: 30px auto;
+    }
+    footer .location{
+        font-size: 15px;
+    }
+    .street-food .menu-btns {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .street-food .menu-btns a{
+        margin: 10px auto;
+        width: 44%;
+        text-align: center;
+    }
+
+    /* DRINKS  */
+    .drinks .cards{
+        flex-direction: column;
+    }
+    .drinks .cards .card{
+        width: 68%;
+        margin: 20px auto;
+    }
+    .drinks .cards .card .pepsi-pc,
+    .drinks .cards .card .wine-pc,
+    .drinks .cards .card .rose-pc,
+    .drinks .cards .card .ice-tea-pc,
+    .drinks .cards .card .water-pc{
+        display: none;
+    }
+    .drinks .cards .card .pepsi-mobile,
+    .drinks .cards .card .wine-mobile,
+    .drinks .cards .card .rose-mobile,
+    .drinks .cards .card .ice-tea-mobile,
+    .drinks .cards .card .water-mobile{
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .title-menu{
+        font-size: 25px;
+    }
+    header {
+        padding: 20px 30px;
+    }
+    header nav .logo{
+        width: 120px;
+    }
+    header .hamburger-list{
+        right: 13%;
+    }
+    .menu-cards {
+        margin-top: 50px;
+    }
+    .menu-cards .cards > a{
+        max-width: 95%;
+        margin-bottom: 20px;
+    }
+    .menu-cards .cards > a:first-child{
+        background-image: url('../images/sushi-img/sushi1-sm-bg.jpg');
+    }
+    .menu-cards .cards > a:hover:first-child{
+        background-image: url('../images/sushi-img/sushi2-sm-bg.jpg');
+    }
+    .menu-cards .cards > a:nth-child(2){
+        background-image: url('../images/streetFood-img/streetFood-sm-bg.jpg');
+    }
+    .menu-cards .cards > a:nth-child(3){
+        background-image: url('../images/drinks-img/drinks-sm-bg.jpg');
+    }
+    .menu-cards .cards > a:last-child{
+        background-image: url('../images/desserts/Dessert-sm-bg.jpg');
+    }
+    .menu-cards .cards > a > h1{
+        font-size: 50px;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer h1{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    footer .social-icons{
+        margin-left: 0;
+    }
+    footer .location{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+
+    /* SUSHI MENU  */
+    .sushi-menus .wrapper {
+        padding: 20px;
+        width: 100%;
+    }
+    .sushi-menus .cards-menu {
+        margin: 0 25px;
+    }
+    .sushi-menus .cards-menu .card-menu {
+        height: 55px;
+        padding: 17px;
+        width: 100%;
+        padding: 17px;
+    }
+    .sushi-menus .wrapper .tabs-box .tab {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+    .sushi-menus .cards-menu .card-menu .title-card h2 {
+        font-size: 1rem;
+    }
+    .sushi-menus .cards-menu .card-menu .title-card::before {
+        bottom: -80%;
+    }
+    .sushi-menus .cards-menu .card-menu .title-card i {
+        font-size: 20px;
+    }
+    .sushi-menus .cards-menu .card-menu .imgs-card .img-card{
+        width: 100%;
+        margin: 10px auto;
+        display: block;
+    }
+    .sushi-menus .cards-menu .card-menu .imgs-card .img-card img {
+        margin: auto;
+        display: block;
+    }
+    .street-food .cards-menu .card-menu ul li {
+        padding: 10px;
+    }
+    .street-food .cards-menu .card-menu .img-card img {
+        width: 100%;
+    }
+    .street-food .cards-menu .card-menu ul li h2 {
+        font-size: 1rem;
+    }
+    .street-food .cards-menu .card-menu h2 span {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+        /* DRINKS  */
+        .drinks .cards .card{
+            width: 95%;
+            margin: 20px auto;
+        }
+        .drinks .cards .card .img{
+            height: auto;
+        }
+        .sushi-menus .title-menu::before {
+            left: -90%;
+        }
+        .sushi-menus .title-menu::after{
+            right: -90%;
+        }
+        .street-food .title-menu::before{
+            left: -40%;
+        }
+        .street-food .title-menu::after{
+            right: -40%;
+        }
+}
+
+@media (max-width: 400px) {
+    .sushi-menus .cards-menu #special-roll-uramaki-without-rice {
+        height: 75px;
+    }
+    .sushi-menus .cards-menu #special-roll-uramaki-without-rice.active {
+        height: 100%;
+    }
+}
+@media (max-width: 350px) {
+    header {
+        padding: 20px 10px;
+    }
+    header nav .logo{
+        width: 120px;
+    }
+    .menu-cards .cards > a{
+        max-width: 98%;
+    }
+    .sushi-menus .cards-menu #tobiko-uramaki{
+        height: 65px;
+    }
+    
+    .street-food .menu-btns a{
+        width: 100%;
+        padding: 7px;
+        margin: 5px;
+    }
+    .street-food .cards-menu .card-menu h2 span {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .sushi-menus .cards-menu{
+        margin: 0;
+    }
+    .sushi-menus .wrapper .tabs-box .tab {
+        font-size: 0.7rem;
+        padding: 7px 5px;
+    }
+    .street-food .cards-menu .card-menu ul li h2 span {
+        text-transform: capitalize;
+        font-size: 0.7rem;
+    }
+    .street-food .cards-menu .card-menu ul li h2 {
+        font-size: 0.9rem;
+    }
+    .street-food .cards-menu .card-menu .burger-img {
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* SMALL  */
+@media (min-width: 576px) {
+    .container{
+        max-width: 100%;
+        margin: auto;
+    }
+}
+/* MEDIUM  */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* LARGE */
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
