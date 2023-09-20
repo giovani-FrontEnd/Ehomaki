@@ -574,7 +574,8 @@ footer .location{
 .drinks .cards .card .wine-mobile,
 .drinks .cards .card .rose-mobile,
 .drinks .cards .card .ice-tea-mobile,
-.drinks .cards .card .water-mobile{
+.drinks .cards .card .water-mobile,
+.drinks .cards .card .white-wine-mobile{
     display: none;
 }
 .drinks .cards .card .img img{
@@ -596,6 +597,26 @@ footer .location{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* END DRINKS  */
+
+.dessert{
+    background-color: var(--main-color);
+    min-height: 60vh;
+}
+.dessert .title-menu::before{
+    left: -50%;
+}
+.dessert .title-menu::after{
+    right: -50%;
+}
+.dessert h1{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    font-size: 2.5rem;
+}
 
 
 
@@ -772,14 +793,16 @@ footer .location{
     .drinks .cards .card .wine-pc,
     .drinks .cards .card .rose-pc,
     .drinks .cards .card .ice-tea-pc,
-    .drinks .cards .card .water-pc{
+    .drinks .cards .card .water-pc,
+    .drinks .cards .card .white-wine-pc{
         display: none;
     }
     .drinks .cards .card .pepsi-mobile,
     .drinks .cards .card .wine-mobile,
     .drinks .cards .card .rose-mobile,
     .drinks .cards .card .ice-tea-mobile,
-    .drinks .cards .card .water-mobile{
+    .drinks .cards .card .water-mobile,
+    .drinks .cards .card .white-wine-mobile{
         display: block;
     }
 }
