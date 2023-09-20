@@ -267,7 +267,7 @@ footer .location{
 .sushi-menus .title-menu::after{
     right: -80%;
 }
-.sushi-menus .wrapper{
+/* .sushi-menus .wrapper{
     background-color: #fff;
     border-radius: 13px;
     padding: 35px;
@@ -341,7 +341,91 @@ footer .location{
     color: #fff;
     background-color: var(--main-color);
     border-color: transparent;
+} */
+
+.scrollable-tabs-container{
+    background-color: #fff;
+    /* max-width: 700px; */
+    margin: 16px auto;
+    /* margin: 30px auto 0 auto; */
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
 }
+.scrollable-tabs-container i{
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    cursor: pointer;
+    color: #000;
+    border-radius: 50%;
+    pointer-events: all;
+}
+.scrollable-tabs-container ul{
+    display: flex;
+    gap: 12px;
+    padding: 12px 24px;
+    margin: 0;
+    list-style: none;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.scrollable-tabs-container ul.dragging{
+    scroll-behavior: auto;
+}
+.scrollable-tabs-container ul::-webkit-scrollbar{
+    display: none;
+}
+.scrollable-tabs-container a{
+    /* padding: 4px 24px; */
+    display: inline-block;
+    user-select: none;
+    white-space: nowrap;
+    background-color: #f5f4fd;
+    color: #000;
+    border: 1px solid #d8d5f2;
+    padding: 4px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.scrollable-tabs-container a.active{
+    color: #fff;
+    background-color: var(--main-color);
+    border-color: transparent;
+}
+.scrollable-tabs-container ul.dragging a{
+    user-select: none;
+    pointer-events: none;
+}
+.scrollable-tabs-container .right-arrow,
+.scrollable-tabs-container .left-arrow{
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    display: none;
+    align-items: center;
+    padding: 0 10px;
+    pointer-events: none;
+}
+.scrollable-tabs-container .right-arrow{
+    right: 0;
+    justify-content: flex-end;
+    background: linear-gradient(-90deg, #fff 40%, transparent);
+}
+.scrollable-tabs-container .left-arrow{
+    background: linear-gradient(90deg, #fff 40%, transparent);
+}
+.scrollable-tabs-container .left-arrow.active,
+.scrollable-tabs-container .right-arrow.active{
+    display: flex;
+}
+
 .sushi-menus .cards-menu{
     padding-bottom: 30px;
 }
@@ -383,7 +467,7 @@ footer .location{
     margin-top: 40px;
 }
 .sushi-menus .cards-menu .card-menu .imgs-card .img-card{
-    width: 150px;;
+    width: 150px;
     margin-right: 20px;
     margin-bottom: 15px;
 }
@@ -408,7 +492,7 @@ footer .location{
 .sushi-menus .cards-menu .card-menu .imgs-card .img-card p{
     font-size: 0.8rem;
     color: rgba(128, 128, 128, 0.904);
-    font-family: cursive;
+    /* font-family: cursive; */
     font-weight: bold;
 }
 .sushi-menus .cards-menu .card-menu .imgs-card .img-card p span{
@@ -598,17 +682,17 @@ footer .location{
 }
 /* END DRINKS  */
 
-.dessert{
+.desserts-section{
     background-color: var(--main-color);
     min-height: 60vh;
 }
-.dessert .title-menu::before{
+.desserts-section .title-menu::before{
     left: -50%;
 }
-.dessert .title-menu::after{
+.desserts-section .title-menu::after{
     right: -50%;
 }
-.dessert h1{
+.desserts-section h1{
     color: #fff;
     text-align: center;
     display: flex;
@@ -622,6 +706,9 @@ footer .location{
 
 /* RESPINSIVE DESIGN  */
 @media (max-width: 992px) {
+    .container{
+        width: 970px;
+    }
     header {
         padding: 20px 50px;
         position: relative;
@@ -740,6 +827,9 @@ footer .location{
 }
 
 @media (max-width: 768px) {
+    .container{
+        width: 750px;
+    }
     footer h1{
         font-size: 15px;
     }
@@ -808,6 +898,10 @@ footer .location{
 }
 
 @media (max-width: 576px) {
+    .container{
+        max-width: 100%;
+        margin: auto;
+    }
     .title-menu{
         font-size: 25px;
     }
@@ -843,7 +937,7 @@ footer .location{
         background-image: url('../images/desserts/Dessert-sm-bg.jpg');
     }
     .menu-cards .cards > a > h1{
-        font-size: 50px;
+        font-size: 40px;
     }
     footer {
         flex-direction: column;
@@ -934,6 +1028,9 @@ footer .location{
         .street-food .title-menu::after{
             right: -40%;
         }
+        .scrollable-tabs-container a{
+            padding: 4px 10px;
+        }
 }
 
 @media (max-width: 400px) {
@@ -969,6 +1066,9 @@ footer .location{
 }
 
 @media (max-width: 300px) {
+    .menu-cards .cards > a > h1{
+        font-size: 34px;
+    }
     .sushi-menus .cards-menu{
         margin: 0;
     }
@@ -997,24 +1097,24 @@ footer .location{
 
 
 /* SMALL  */
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
     .container{
         max-width: 100%;
         margin: auto;
     }
-}
+} */
 /* MEDIUM  */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .container{
         width: 750px;
     }
-}
+} */
 /* LARGE */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .container{
         width: 970px;
     }
-}
+} */
 @media (min-width: 1200px) {
     .container{
         width: 1170px;
