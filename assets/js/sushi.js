@@ -20,7 +20,7 @@ let cardsMenu = document.querySelectorAll(
 function tabsClick(e) {
   cardsMenu.forEach((cardMenu) => {
     if (e.target.dataset.title === cardMenu.id) {
-      cardMenu.classList.toggle("active");
+      cardMenu.classList.add("active");
     } else {
       cardMenu.classList.remove("active");
     }

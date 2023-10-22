@@ -12,12 +12,14 @@
 }
 
 html{
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     width: 100%;
     overflow-x: hidden;
 }
 body{
     font-family: var(--body-font);
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .font-title{
@@ -414,12 +416,13 @@ footer .location{
     pointer-events: none;
 }
 .scrollable-tabs-container .right-arrow{
-    right: 0;
+    right: -7px;
     justify-content: flex-end;
-    background: linear-gradient(-90deg, #fff 40%, transparent);
+    background: linear-gradient(-90deg, #fff 30%, transparent);
 }
 .scrollable-tabs-container .left-arrow{
-    background: linear-gradient(90deg, #fff 40%, transparent);
+    background: linear-gradient(90deg, #fff 30%, transparent);
+    left: -5px;
 }
 .scrollable-tabs-container .left-arrow.active,
 .scrollable-tabs-container .right-arrow.active{
@@ -499,6 +502,9 @@ footer .location{
     color: var(--main-color);
     font-size: 1.4rem;
     font-weight: bold;
+}
+.sushi-menus .sushi-price span{
+    margin-left: 10px;
 }
 /* END SUSHI MENU  */
 
@@ -623,7 +629,6 @@ footer .location{
 .street-food .cards-menu .card-menu h2 span{
     font-size: 0.9rem;
     color: #808080b3;
-    font-family: cursive;
 }
 /* END STREET FOOD MENU  */
 
@@ -684,7 +689,8 @@ footer .location{
 
 .desserts-section{
     background-color: var(--main-color);
-    min-height: 60vh;
+    min-height: 100vh;
+    padding-bottom: 20px;
 }
 .desserts-section .title-menu::before{
     left: -50%;
@@ -692,16 +698,42 @@ footer .location{
 .desserts-section .title-menu::after{
     right: -50%;
 }
-.desserts-section h1{
-    color: #fff;
-    text-align: center;
+.desserts-section .cards{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 20px;
     justify-content: center;
-    height: 50vh;
-    font-size: 2.5rem;
+    margin-top: 30px;
 }
-
+.desserts-section .cards .card{
+    width: 250px;
+    height: 380px;
+    background-color: #fff;
+}
+.desserts-section .cards .card .img{
+    width: 100%;
+}
+.desserts-section .cards .card .img img{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid gray;
+}
+.desserts-section .cards .card .title-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.desserts-section .cards .card .title-card h1{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.desserts-section .cards .card .title-card .price{
+    font-size: 1.7rem;
+    color: var(--main-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
 /* RESPINSIVE DESIGN  */
@@ -823,6 +855,13 @@ footer .location{
     .street-food .cards-menu .card-menu .burger-img {
         justify-content: center;
         height: 300px;
+    }
+
+    .desserts-section .cards{
+        flex-direction: column;
+    }
+    .desserts-section .container{
+        width: 100%;
     }
 }
 
@@ -1029,7 +1068,11 @@ footer .location{
             right: -40%;
         }
         .scrollable-tabs-container a{
-            padding: 4px 10px;
+            padding: 6px;
+            font-size: 13px;
+        }
+        .street-food .cards-menu .card-menu{
+            height: 70px;
         }
 }
 
