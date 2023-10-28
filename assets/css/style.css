@@ -12,7 +12,6 @@
 }
 
 html{
-    /* scroll-behavior: smooth; */
     width: 100%;
     overflow-x: hidden;
 }
@@ -129,7 +128,6 @@ header nav .hamburger-list{
 
 /* START MENU CARDS  */
 .menu-cards{
-    /* min-height: 90vh; */
     margin-top: 50px;
 }
 .menu-cards .cards{
@@ -269,87 +267,9 @@ footer .location{
 .sushi-menus .title-menu::after{
     right: -80%;
 }
-/* .sushi-menus .wrapper{
-    background-color: #fff;
-    border-radius: 13px;
-    padding: 35px;
-    overflow-x: hidden;
-    margin: 30px auto 0 auto;
-    position: relative;
-}
-.sushi-menus .wrapper .icon{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 120px;
-    display: flex;
-    align-items: center;
-}
-.sushi-menus .wrapper .icon:first-child{
-    left: -35px;
-    padding-left: 15px;
-    display: none;
-    background: linear-gradient(90deg, #fff 40%, transparent);
-}
-.sushi-menus .wrapper .icon:last-child{
-    right: -35px;
-    padding-right: 15px;
-    justify-content: flex-end;
-    background: linear-gradient(-90deg, #fff 40%, transparent);
-}
-.sushi-menus .wrapper .icon i{
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-.sushi-menus .wrapper .icon i:hover{
-    background-color: #efedfb;
-}
-.sushi-menus .wrapper .icon:first-child i{
-    margin-left: 15px;
-}
-.sushi-menus .wrapper .icon:last-child i{
-    margin-right: 15px;
-}
-.sushi-menus .wrapper .tabs-box{
-    display: flex;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    gap: 12px;
-}
-.sushi-menus .wrapper .tabs-box.dragging{
-    scroll-behavior: auto;
-    cursor: grab;
-}
-.sushi-menus .wrapper .tabs-box .tab{
-    font-size: 1.18rem;
-    background-color: #f5f4fd;
-    padding: 10px;
-    border: 1px solid #d8d5f2;
-    border-radius: 6px;
-    cursor: pointer;
-    white-space: nowrap;
-    color: #000;
-}
-.sushi-menus .wrapper .tabs-box.dragging .tab{
-    user-select: none;
-    pointer-events: none;
-}
-.sushi-menus .wrapper .tabs-box .tab.active{
-    color: #fff;
-    background-color: var(--main-color);
-    border-color: transparent;
-} */
-
 .scrollable-tabs-container{
     background-color: #fff;
-    /* max-width: 700px; */
     margin: 16px auto;
-    /* margin: 30px auto 0 auto; */
     overflow: hidden;
     position: relative;
     border-radius: 10px;
@@ -382,7 +302,6 @@ footer .location{
     display: none;
 }
 .scrollable-tabs-container a{
-    /* padding: 4px 24px; */
     display: inline-block;
     user-select: none;
     white-space: nowrap;
@@ -495,7 +414,6 @@ footer .location{
 .sushi-menus .cards-menu .card-menu .imgs-card .img-card p{
     font-size: 0.8rem;
     color: rgba(128, 128, 128, 0.904);
-    /* font-family: cursive; */
     font-weight: bold;
 }
 .sushi-menus .cards-menu .card-menu .imgs-card .img-card p span{
